@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/racetrack"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDiem"
+        android:layout_width="180dp"
+        android:layout_height="73dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="100"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+    <ImageButton
+        android:id="@+id/ibtnStart"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_flag_start" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbxCar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/sbCar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="5"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_car1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbxCar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/sbCar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:progress="5"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_car2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbxCar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/sbCar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:progress="5"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/ic_car3" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
